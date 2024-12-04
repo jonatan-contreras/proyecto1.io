@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Tours</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="icon" href="favicon_travel_tours.ico" type="image/x-icon">
+</head>
+<body style="background-color: rgb(255, 255, 255);">
+  <header>
+    <div class="logo">
+      <img src="logo_travel_tours.png" alt="Logo de travel tours">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Destinos</a></li>
+        <li><a href="#">Tours</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+  <video loop="" muted="" autoplay="" crossorigin="anonymous" class="relative hidden md:block h-full w-full object-center object-cover bg-slate-500 video-main-full"><source src="videosbanner.mp4" type="video/mp4" class=""></video>
+  <div class="center-content">
+    <h1 class="titulo">TRAVEL TOURS</h1>
+    <p class="parrafo-titulo">¿Buscas los mejores viajes al mejor precio? ¡Aquí los tenemos!</p>
+  </div>
+  
+  <div class="container__slider">
+
+    <div class="container">
+        <input type="radio" name="slider" id="item-1" checked>
+        <input type="radio" name="slider" id="item-2">
+        <input type="radio" name="slider" id="item-3">
+
+        <div class="cards">
+            <label class="card" for="item-1" id="selector-1">
+                <img src="magia_turca.jpg">
+            </label>
+            <label class="card" for="item-2" id="selector-2">
+                <img src="tesoros_de_europa.jpg">
+            </label>
+            <label class="card" for="item-3" id="selector-3">
+                <img src="marruecos.jpg">
+            </label>
+
+        </div>
+    </div>
+
+</div>
+  <script>
+    // Script para alternar el menú hamburguesa en móviles
+    document.querySelector('.hamburger').addEventListener('click', () => {
+      document.querySelector('.nav-links').classList.toggle('nav-active');
+    });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
